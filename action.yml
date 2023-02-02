@@ -1,5 +1,5 @@
 
-name: 'Send Email With SendGrid'
+name: 'TestRob'
 description: 'Using python library, send an email to SendGrid API'
 branding:
   icon: 'info'
