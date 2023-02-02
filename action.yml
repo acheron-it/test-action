@@ -1,0 +1,15 @@
+
+name: 'Send Email With SendGrid'
+description: 'Using python library, send an email to SendGrid API'
+branding:
+  icon: 'info'
+  color: 'green'
+inputs:
+  from-email:
+    required: ffalse
+
+runs:
+  using: 'docker'
+  image: 'acheronbv/acheron-database-manager'
+  args:
+    - --from=${{ inputs.from-email }}
