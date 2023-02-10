@@ -11,6 +11,4 @@ inputs:
 runs:
   using: 'docker'
   image: 'docker://acheronbv/acheron-database-manager:latest-1.3.50'
-  steps:
-    - id: testrob
-      run: python $(ls -d "/usr/local/lib/"python*/ | tail -1)/site-packages/opt/acheron/lint.py "$@" adm-demo-environment
+  entrypoint: 'python $(ls -d "/usr/local/lib/"python*/ | tail -1)/site-packages/opt/acheron/lint.py "$@" adm-demo-environment'
