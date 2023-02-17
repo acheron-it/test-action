@@ -12,5 +12,5 @@ runs:
   using: 'docker'
   image: 'docker://acheronbv/acheron-database-manager:latest-1.3.50'
   #pre-entrypoint: '/etc/aliases.sh'
-  entrypoint: python /usr/local/lib/python3.9/site-packages/opt/acheron/lint.py -h
+  entrypoint: ls /usr/local/lib/python3.9/site-packages/opt/acheron/
   #Spost-entrypoint: 'cleanup.sh'
